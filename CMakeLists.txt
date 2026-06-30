@@ -4,11 +4,13 @@ project(gomoku VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTORCC ON)
-
-find_package(Qt5 REQUIRED COMPONENTS Widgets)
+include(FetchContent)
+FetchContent_Declare(
+    ftxui
+    GIT_REPOSITORY https://github.com/ArthurSonzogni/FTXUI
+    GIT_TAG v5.0.0
+)
+FetchContent_MakeAvailable(ftxui)
 
 set(CMAKE_CXX_CLANG_TIDY clang-tidy)
 find_package(spdlog REQUIRED)
@@ -16,4 +18,9 @@ find_package(spdlog REQUIRED)
 file(GLOB_RECURSE FRONTEND_SOURCES src/*.cpp src/*.hpp)
 
 add_executable(gomoku ${FRONTEND_SOURCES})
-target_link_libraries(gomoku Qt5::Widgets spdlog::spdlog)
+target_link_libraries(gomoku
+    ftxui::screen
+    ftxui::dom
+    ftxui::component
+    spdlog::spdlog
+)
