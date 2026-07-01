@@ -7,7 +7,5 @@ Checks: >
   readability-*,
   -modernize-use-trailing-return-type,
   -cppcoreguidelines-avoid-magic-numbers,
-  -readability-magic-numbers
 
-WarningsAsErrors: ""
 HeaderFilterRegex: "src/.*"
