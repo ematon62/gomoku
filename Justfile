@@ -1,7 +1,7 @@
 build_dir := "build"
 
 compile:
-    cmake -B {{build_dir}} -S . -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=clang++
+    cmake -B {{build_dir}} -S . -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_CXX_COMPILER=clang++
     cmake --build {{build_dir}} --parallel
 
 start: compile
