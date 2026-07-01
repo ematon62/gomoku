@@ -1,15 +1,12 @@
-#include <ftxui/component/component.hpp>
-#include <ftxui/component/screen_interactive.hpp>
-#include <ftxui/dom/elements.hpp>
-#include <spdlog/spdlog.h>
+#include "gomoku.hpp"
 
-int main()
-{
-    spdlog::info("gomoku started");
+int main() {
+    auto logger = get_logger();
+    logger.info("Logger spawned.");
 
     auto screen = ftxui::ScreenInteractive::Fullscreen();
     ftxui::ButtonOption opt;
-    opt.transform = [](const ftxui::EntryState& s) {
+    opt.transform = [](const ftxui::EntryState &s) {
         auto label = ftxui::text(s.label) | ftxui::center;
         if (s.focused)
             label = label | ftxui::bold;

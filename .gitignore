@@ -10,6 +10,12 @@
 *.dll
 *.dylib
 
+# clang cache
+.cache/
+
+# logs folder
+logs/
+
 # Qt-es
 object_script.*.Release
 object_script.*.Debug

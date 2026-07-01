@@ -18,6 +18,11 @@ find_package(spdlog REQUIRED)
 file(GLOB_RECURSE FRONTEND_SOURCES src/*.cpp src/*.hpp)
 
 add_executable(gomoku ${FRONTEND_SOURCES})
+include_directories(includes)
+target_compile_options(gomoku PRIVATE
+    -Wall
+    -Werror
+)
 target_link_libraries(gomoku
     ftxui::screen
     ftxui::dom
