@@ -17,6 +17,8 @@ find_package(spdlog REQUIRED)
 
 file(GLOB_RECURSE FRONTEND_SOURCES src/*.cpp src/*.hpp)
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+
 add_executable(gomoku ${FRONTEND_SOURCES})
 target_link_libraries(gomoku
     ftxui::screen
