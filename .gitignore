@@ -9,6 +9,10 @@
 *.so.*
 *.dll
 *.dylib
+gomoku
+
+# clangd
+compile_commands.json
 
 # clang cache
 .cache/
@@ -60,3 +64,7 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc
+
+
+# Log files
+logs/

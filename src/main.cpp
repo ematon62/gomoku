@@ -10,6 +10,7 @@ int main() {
         auto label = ftxui::text(s.label) | ftxui::center;
         if (s.focused)
             label = label | ftxui::bold;
+        }
         return label | ftxui::borderRounded | ftxui::bgcolor(ftxui::Color::Default);
     };
     auto button = ftxui::Button("Quitter", screen.ExitLoopClosure(), opt);
