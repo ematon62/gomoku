@@ -1,0 +1,443 @@
+{
+  "version": "1",
+  "meta": {
+    "name": "Main Screen",
+    "theme": "dracula",
+    "savedAt": "2026-07-02T13:24:22.657Z"
+  },
+  "tree": {
+    "id": "root",
+    "type": "Screen",
+    "name": "Main Screen",
+    "props": {
+      "width": 80,
+      "height": 24,
+      "theme": "dracula"
+    },
+    "layout": {
+      "type": "absolute"
+    },
+    "style": {
+      "border": false
+    },
+    "events": {},
+    "children": [
+      {
+        "type": "Box",
+        "name": "Box",
+        "props": {
+          "width": 36,
+          "height": 6
+        },
+        "style": {
+          "color": "white",
+          "border": true,
+          "borderStyle": "single",
+          "borderColor": "white",
+          "borderCorners": true
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782990491195-12",
+        "layout": {
+          "type": "flexbox",
+          "direction": "column",
+          "padding": 1,
+          "gap": 1,
+          "x": 20,
+          "y": 2
+        },
+        "children": []
+      },
+      {
+        "type": "Radio",
+        "name": "Radio",
+        "props": {
+          "label": "Easy",
+          "checked": false,
+          "selectedIcon": "●",
+          "unselectedIcon": "○",
+          "width": 11,
+          "showBrackets": false
+        },
+        "layout": {
+          "type": "none",
+          "x": 34,
+          "y": 6
+        },
+        "style": {
+          "color": "green",
+          "selectedColor": "green",
+          "unselectedColor": "white",
+          "labelColor": "white"
+        },
+        "events": {
+          "onChange": "handleChange"
+        },
+        "children": [],
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782990643415-18"
+      },
+      {
+        "type": "Text",
+        "name": "Text",
+        "props": {
+          "content": "AI config",
+          "wrap": false,
+          "align": "center",
+          "width": 36
+        },
+        "style": {
+          "color": "white",
+          "bold": true,
+          "underline": true
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782990763414-21",
+        "layout": {
+          "type": "none",
+          "x": 20,
+          "y": 3
+        },
+        "children": []
+      },
+      {
+        "type": "Radio",
+        "name": "Radio",
+        "props": {
+          "label": "Normal",
+          "checked": false,
+          "selectedIcon": "●",
+          "unselectedIcon": "○",
+          "width": 11,
+          "showBrackets": false
+        },
+        "style": {
+          "color": "cyan",
+          "selectedColor": "green",
+          "unselectedColor": "white",
+          "labelColor": "white",
+          "borderCorners": true
+        },
+        "events": {
+          "onChange": "handleChange"
+        },
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782990773023-22",
+        "layout": {
+          "type": "none",
+          "x": 46,
+          "y": 6
+        },
+        "children": []
+      },
+      {
+        "type": "Radio",
+        "name": "Radio",
+        "props": {
+          "label": "Dumb",
+          "checked": true,
+          "selectedIcon": "●",
+          "unselectedIcon": "○",
+          "width": 11,
+          "showBrackets": false
+        },
+        "style": {
+          "color": "#a9ffff",
+          "selectedColor": "green",
+          "unselectedColor": "white",
+          "labelColor": "white"
+        },
+        "events": {
+          "onChange": "handleChange"
+        },
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782990823187-23",
+        "layout": {
+          "type": "none",
+          "x": 22,
+          "y": 6
+        },
+        "children": []
+      },
+      {
+        "type": "Box",
+        "name": "Box",
+        "props": {
+          "width": 36,
+          "height": 6
+        },
+        "style": {
+          "color": "white",
+          "border": true,
+          "borderStyle": "single",
+          "borderColor": "white",
+          "borderCorners": true
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782990996170-30",
+        "layout": {
+          "type": "flexbox",
+          "direction": "column",
+          "padding": 1,
+          "gap": 1,
+          "x": 20,
+          "y": 17
+        },
+        "children": []
+      },
+      {
+        "type": "Box",
+        "name": "Box",
+        "props": {
+          "width": 36,
+          "height": 7
+        },
+        "style": {
+          "color": "white",
+          "border": true,
+          "borderStyle": "single",
+          "borderColor": "white",
+          "borderCorners": true
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782994094841-35",
+        "layout": {
+          "type": "flexbox",
+          "direction": "column",
+          "padding": 1,
+          "gap": 1,
+          "x": 20,
+          "y": 9
+        },
+        "children": []
+      },
+      {
+        "type": "Text",
+        "name": "Text",
+        "props": {
+          "content": "Ruleset",
+          "wrap": false,
+          "align": "center",
+          "width": 36
+        },
+        "style": {
+          "color": "white",
+          "underline": true,
+          "bold": true
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782994094841-36",
+        "layout": {
+          "type": "none",
+          "x": 20,
+          "y": 10
+        },
+        "children": []
+      },
+      {
+        "type": "Radio",
+        "name": "Radio",
+        "props": {
+          "label": "Standard",
+          "checked": true,
+          "selectedIcon": "●",
+          "unselectedIcon": "○",
+          "width": 11,
+          "showBrackets": false
+        },
+        "style": {
+          "color": "#a9ffff",
+          "selectedColor": "green",
+          "unselectedColor": "white",
+          "labelColor": "white"
+        },
+        "events": {
+          "onChange": "handleChange"
+        },
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782994160897-37",
+        "layout": {
+          "type": "none",
+          "x": 25,
+          "y": 12
+        },
+        "children": []
+      },
+      {
+        "type": "Radio",
+        "name": "Radio",
+        "props": {
+          "label": "Freestyle",
+          "checked": false,
+          "selectedIcon": "●",
+          "unselectedIcon": "○",
+          "width": 11,
+          "showBrackets": false
+        },
+        "style": {
+          "color": "#a9ffff",
+          "selectedColor": "green",
+          "unselectedColor": "white",
+          "labelColor": "white"
+        },
+        "events": {
+          "onChange": "handleChange"
+        },
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782994164913-38",
+        "layout": {
+          "type": "none",
+          "x": 41,
+          "y": 12
+        },
+        "children": []
+      },
+      {
+        "type": "Radio",
+        "name": "Radio",
+        "props": {
+          "label": "Renju",
+          "checked": false,
+          "selectedIcon": "●",
+          "unselectedIcon": "○",
+          "width": 11,
+          "showBrackets": false
+        },
+        "style": {
+          "color": "#a9ffff",
+          "selectedColor": "green",
+          "unselectedColor": "white",
+          "labelColor": "white"
+        },
+        "events": {
+          "onChange": "handleChange"
+        },
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782994180321-39",
+        "layout": {
+          "type": "none",
+          "x": 25,
+          "y": 14
+        },
+        "children": []
+      },
+      {
+        "type": "Radio",
+        "name": "Radio",
+        "props": {
+          "label": "Swap2",
+          "checked": false,
+          "selectedIcon": "●",
+          "unselectedIcon": "○",
+          "width": 11,
+          "showBrackets": false
+        },
+        "style": {
+          "color": "#a9ffff",
+          "selectedColor": "green",
+          "unselectedColor": "white",
+          "labelColor": "white"
+        },
+        "events": {
+          "onChange": "handleChange"
+        },
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782994185137-40",
+        "layout": {
+          "type": "none",
+          "x": 41,
+          "y": 14
+        },
+        "children": []
+      },
+      {
+        "type": "Text",
+        "name": "Text",
+        "props": {
+          "content": "Miscellaneous",
+          "wrap": false,
+          "align": "center",
+          "width": 36
+        },
+        "style": {
+          "color": "white",
+          "bold": true,
+          "underline": true
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782994663974-43",
+        "layout": {
+          "type": "none",
+          "x": 20,
+          "y": 18
+        },
+        "children": []
+      },
+      {
+        "type": "Checkbox",
+        "name": "Checkbox",
+        "props": {
+          "label": "Threat highlighting",
+          "checked": true,
+          "checkedIcon": "✓",
+          "uncheckedIcon": " ",
+          "width": 23
+        },
+        "layout": {
+          "type": "none",
+          "x": 26,
+          "y": 20
+        },
+        "style": {
+          "color": "white",
+          "checkedColor": "green",
+          "uncheckedColor": "white",
+          "labelColor": "white"
+        },
+        "events": {
+          "onChange": "handleChange"
+        },
+        "children": [],
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782998194795-50"
+      }
+    ],
+    "locked": false,
+    "hidden": false,
+    "collapsed": false
+  }
+}
