@@ -1,19 +1,8 @@
 #pragma once
 
-#include <chrono>
-#include <sstream>
+#include "spdlog/spdlog.h"
 
-#include <ftxui/component/component.hpp>
-#include <ftxui/component/screen_interactive.hpp>
-#include <ftxui/dom/elements.hpp>
-
-#include "spdlog/sinks/basic_file_sink.h"
-#include "spdlog/sinks/stdout_color_sinks.h"
-#include <spdlog/logger.h>
-#include <spdlog/spdlog.h>
-
-// Configuration
-
+// Configure the default logger
 // Level: debug, format: "[date time] message"
-// Logger prints both to stdout and to filepath: logs/[date_time].log
-spdlog::logger get_logger();
+// Logger prints both to stdout and to filepath: logs/[date time].log
+void setup_default_logger();
