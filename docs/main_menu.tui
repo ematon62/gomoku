@@ -1,0 +1,133 @@
+{
+  "version": "1",
+  "meta": {
+    "name": "Main Screen",
+    "theme": "dracula",
+    "savedAt": "2026-07-02T12:07:28.397Z"
+  },
+  "tree": {
+    "id": "root",
+    "type": "Screen",
+    "name": "Main Screen",
+    "props": {
+      "width": 80,
+      "height": 24,
+      "theme": "dracula"
+    },
+    "layout": {
+      "type": "absolute"
+    },
+    "style": {
+      "border": false
+    },
+    "events": {},
+    "children": [
+      {
+        "type": "Text",
+        "name": "Text",
+        "props": {
+          "content": "GOMOKU\nby ematon and vsoltys",
+          "wrap": false,
+          "align": "center",
+          "width": 40,
+          "height": 4
+        },
+        "layout": {
+          "type": "none",
+          "x": 20,
+          "y": 2
+        },
+        "style": {
+          "color": "white",
+          "bold": true,
+          "border": true,
+          "borderStyle": "double"
+        },
+        "events": {},
+        "children": [],
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782989324752-1"
+      },
+      {
+        "type": "Menu",
+        "name": "Menu",
+        "props": {
+          "menuStyle": "filled",
+          "items": [
+            {
+              "icon": "",
+              "hotkey": "",
+              "separator": true,
+              "label": "How to play",
+              "style": "plain"
+            },
+            {
+              "icon": "",
+              "hotkey": "",
+              "separator": true,
+              "label": "Play vs. AI",
+              "style": "plain"
+            },
+            {
+              "icon": "",
+              "hotkey": "",
+              "separator": true,
+              "label": "Play vs. Human",
+              "style": "plain"
+            },
+            {
+              "icon": "",
+              "hotkey": "",
+              "separator": true,
+              "label": "AI vs. AI",
+              "style": "plain"
+            },
+            {
+              "icon": "",
+              "hotkey": "",
+              "separator": true,
+              "label": "Game settings",
+              "style": "plain"
+            },
+            {
+              "icon": "",
+              "hotkey": "",
+              "separator": false,
+              "label": "Exit",
+              "style": "plain"
+            }
+          ],
+          "selectedIndex": 0,
+          "width": 30,
+          "height": 12
+        },
+        "layout": {
+          "type": "flexbox",
+          "direction": "column",
+          "x": 25,
+          "y": 9,
+          "gap": 6,
+          "padding": 6
+        },
+        "style": {
+          "color": "white",
+          "border": true,
+          "borderStyle": "double",
+          "borderColor": "white",
+          "borderCorners": true
+        },
+        "events": {},
+        "children": [],
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782991375703-33"
+      }
+    ],
+    "locked": false,
+    "hidden": false,
+    "collapsed": false
+  }
+}

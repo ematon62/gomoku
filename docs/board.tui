@@ -1,0 +1,300 @@
+{
+  "version": "1",
+  "meta": {
+    "name": "Main Screen",
+    "theme": "dracula",
+    "savedAt": "2026-07-02T13:56:24.133Z"
+  },
+  "tree": {
+    "id": "root",
+    "type": "Screen",
+    "name": "Main Screen",
+    "props": {
+      "width": 80,
+      "height": 24,
+      "theme": "dracula"
+    },
+    "layout": {
+      "type": "absolute"
+    },
+    "style": {
+      "border": false
+    },
+    "events": {},
+    "children": [
+      {
+        "type": "Grid",
+        "name": "Grid",
+        "props": {
+          "width": 38,
+          "height": 19
+        },
+        "layout": {
+          "type": "grid",
+          "columns": 19,
+          "rows": 19,
+          "columnGap": 3,
+          "rowGap": 3,
+          "x": 9,
+          "y": 5,
+          "padding": 1
+        },
+        "style": {
+          "color": "white",
+          "backgroundColor": "#e66100",
+          "borderColor": "black",
+          "border": true
+        },
+        "events": {},
+        "children": [],
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782999774363-56"
+      },
+      {
+        "type": "Box",
+        "name": "Box",
+        "props": {
+          "width": 19,
+          "height": 23
+        },
+        "layout": {
+          "type": "flexbox",
+          "direction": "column",
+          "padding": 1,
+          "gap": 1,
+          "x": 56,
+          "y": 1
+        },
+        "style": {
+          "color": "white",
+          "border": true,
+          "borderStyle": "single",
+          "borderColor": "white"
+        },
+        "events": {},
+        "children": [],
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782999871653-57"
+      },
+      {
+        "type": "Text",
+        "name": "Text",
+        "props": {
+          "content": "History",
+          "wrap": false,
+          "align": "center",
+          "width": 19
+        },
+        "layout": {
+          "type": "none",
+          "x": 56,
+          "y": 2
+        },
+        "style": {
+          "color": "white",
+          "bold": true,
+          "underline": true
+        },
+        "events": {},
+        "children": [],
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1782999906835-60"
+      },
+      {
+        "type": "Box",
+        "name": "Box",
+        "props": {
+          "width": 49,
+          "height": 3
+        },
+        "style": {
+          "color": "white",
+          "border": true,
+          "borderStyle": "single",
+          "borderColor": "white"
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1783000260370-69",
+        "layout": {
+          "type": "flexbox",
+          "direction": "column",
+          "padding": 1,
+          "gap": 1,
+          "x": 3,
+          "y": 1
+        },
+        "children": []
+      },
+      {
+        "type": "Text",
+        "name": "Text",
+        "props": {
+          "content": "Turn: ⚫",
+          "wrap": false,
+          "align": "left",
+          "width": 9
+        },
+        "style": {
+          "color": "white",
+          "bold": true,
+          "underline": true
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1783000290794-70",
+        "layout": {
+          "type": "none",
+          "x": 4,
+          "y": 2
+        },
+        "children": []
+      },
+      {
+        "type": "Text",
+        "name": "Text",
+        "props": {
+          "content": "Timer: 00.12 s",
+          "wrap": false,
+          "align": "left",
+          "width": 13,
+          "height": 1
+        },
+        "style": {
+          "color": "white",
+          "bold": true,
+          "underline": true
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1783000319223-71",
+        "layout": {
+          "type": "none",
+          "x": 17,
+          "y": 2
+        },
+        "children": []
+      },
+      {
+        "type": "Text",
+        "name": "Text",
+        "props": {
+          "content": "Ruleset: Standard",
+          "wrap": false,
+          "align": "left",
+          "width": 16,
+          "height": 1
+        },
+        "style": {
+          "color": "white",
+          "bold": true,
+          "underline": true
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1783000380244-72",
+        "layout": {
+          "type": "none",
+          "x": 34,
+          "y": 2
+        },
+        "children": []
+      },
+      {
+        "type": "Text",
+        "name": "Text",
+        "props": {
+          "content": "⚫ placed at 19, 19",
+          "wrap": false,
+          "align": "center",
+          "width": 19
+        },
+        "style": {
+          "color": "white",
+          "bold": false,
+          "underline": false
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1783000500664-73",
+        "layout": {
+          "type": "none",
+          "x": 56,
+          "y": 4
+        },
+        "children": []
+      },
+      {
+        "type": "Text",
+        "name": "Text",
+        "props": {
+          "content": "⚫ placed at 19, 19",
+          "wrap": false,
+          "align": "center",
+          "width": 19
+        },
+        "style": {
+          "color": "white",
+          "bold": false,
+          "underline": false
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1783000563117-74",
+        "layout": {
+          "type": "none",
+          "x": 56,
+          "y": 5
+        },
+        "children": []
+      },
+      {
+        "type": "Text",
+        "name": "Text",
+        "props": {
+          "content": "⚫ placed at 19, 19",
+          "wrap": false,
+          "align": "center",
+          "width": 19
+        },
+        "style": {
+          "color": "white",
+          "bold": false,
+          "underline": false
+        },
+        "events": {},
+        "locked": false,
+        "hidden": false,
+        "collapsed": false,
+        "id": "comp-1783000565560-75",
+        "layout": {
+          "type": "none",
+          "x": 56,
+          "y": 6
+        },
+        "children": []
+      }
+    ],
+    "locked": false,
+    "hidden": false,
+    "collapsed": false
+  }
+}
